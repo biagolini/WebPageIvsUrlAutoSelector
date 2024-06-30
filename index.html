@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Streaming with Dynamic Source Loading</title>
+    <!-- Importing Video.js CSS for video player styling -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.14.3/video-js.css"
+      rel="stylesheet"
+    />
+    <!-- Importing custom CSS for additional styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Importing Video.js library for video player functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.14.3/video.min.js"></script>
+    <!-- Importing Amazon IVS technology for Video.js to enable Amazon IVS streaming -->
+    <script src="https://player.live-video.net/1.29.0/amazon-ivs-videojs-tech.min.js"></script>
+    <!-- Importing Amazon IVS Quality Plugin for enhanced streaming quality -->
+    <!-- To use UI toggle for available qualities, include the amazon-ivs-quality-plugin.min.js 
+         Reference: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player-videojs.html#videojs-plugins -->
+    <script src="https://player.live-video.net/1.29.0/amazon-ivs-quality-plugin.min.js"></script>
+  </head>
+  <body>
+    <!-- Container for the video player -->
+    <div class="video-container">
+      <!-- Video.js player element with Amazon IVS technology -->
+      <video
+        id="amazon-ivs-videojs"
+        class="video-js vjs-4-3 vjs-big-play-centered"
+        controls
+        playsinline
+      ></video>
+    </div>
+    <!-- Including the custom JavaScript for handling the streaming logic -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* Defines the page background and default font styles */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for the video playback container */
+.video-container {
+  width: 100%;
+  max-width: 640px;
+  max-height: 480px;
+  margin: 20px auto;
+}
